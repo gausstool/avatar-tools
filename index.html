@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>随机头像生成器</title>
+  </head>
+
+  <body>
+    <div class="container" id="container" style="display: none">
+      <div>
+        <input type="text" id="input" />
+      </div>
+      <div style="margin-top: 16px">
+        <img src="" id="avatar1" />
+        <img src="" id="avatar2" />
+      </div>
+    </div>
+    <script src="./random.js"></script>
+  </body>
+</html>
+
+<style>
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container img {
+    width: 400px;
+    border: 1px solid;
+    border-radius: 4px;
+  }
+
+  #random-avatar-gen {
+    display: none;
+  }
+
+  input[type="text"] {
+    width: 300px;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border: 2px solid #888888;
+    outline: none;
+  }
+
+  input[type="text"]:focus {
+    border: 2px solid #181818;
+    transition: 0.3s ease;
+  }
+</style>
